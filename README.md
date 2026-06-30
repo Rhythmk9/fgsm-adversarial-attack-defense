@@ -48,18 +48,8 @@ x_adv = x + ε · sign(∇_x J(θ, x, y))
 A single gradient step in the direction that maximises the loss produces an image that looks identical to humans but fools the model.
 
 ## Results Summary
-|| epsilon | Standard CNN | Defended CNN | Gain |
-|---------|-------------|--------------|------|
-| 0.00 | 97.78% | 98.89% | +1.11% |
-| 0.05 | 89.72% | 94.72% | +5.00% |
-| 0.10 | 76.39% | 90.56% | +14.17% |
-| 0.15 | 47.22% | 80.28% | +33.06% |
-| 0.20 | 17.78% | 68.33% | +50.56% |
-| 0.25 | 10.28% | 53.33% | +43.06% |
-| 0.30 | 7.50% | 38.06% | +30.56% |
-| 0.35 | 3.61% | 23.89% | +20.28% |
-| 0.40 | 1.94% | 11.67% | +9.72% |
 
+![image](results/images/image.png)
 
 The defended model outperforms the standard model at **every** epsilon value, with the largest gain (+50.56%) at ε=0.20 — exactly where the standard model has already collapsed but the defended model is still holding together.
 
